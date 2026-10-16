@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- Logótipo fictício do Café Mondego (exemplo) -->
+  <circle cx="60" cy="60" r="60" fill="#5b3a29" />
+  <g transform="translate(30 26) scale(2.5)"><path fill="#f3e3c3" d="M2 21h18v-2H2M20 8h-2V5h2m0-2H4v10a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4v-3h2a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2" /></g>
+</svg>
