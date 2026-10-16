@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:;Café Mondego;;;
+FN:Café Mondego
+ORG:Café Mondego
+TEL;TYPE=WORK:+351239000000
+TEL;TYPE=CELL:+351912345678
+EMAIL;TYPE=INTERNET:ola@cafemondego.pt
+URL:https://rombi.pt/p/cafe-mondego
+ADR;TYPE=WORK:;;Rua Ferreira Borges;Coimbra;;3000-180;Portugal
+NOTE:Perfil digital criado com ROMBI
+END:VCARD
