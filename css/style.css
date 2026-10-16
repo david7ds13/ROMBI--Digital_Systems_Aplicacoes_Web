@@ -1,0 +1,684 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222222;
+    background-color: #f4f4f4;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: #2877bc;
+}
+
+.contentor {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: white;
+    border-bottom: 1px solid #dddddd;
+}
+
+#barra {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+}
+
+#logo img {
+    height: 40px;
+    display: block;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+.nav-link {
+    padding: .5rem .8rem;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: #2877bc;
+}
+
+.nav-link.activo {
+    border-bottom: solid 2px #2877bc;
+}
+
+.botao {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 2px solid #2877bc;
+    border-radius: 25px;
+    background-color: #2877bc;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.botao:hover {
+    background-color: #1d5a91;
+}
+
+.botao-branco {
+    background-color: white;
+    color: #222222;
+    border-color: #222222;
+}
+
+.botao-branco:hover {
+    background-color: #222222;
+    color: white;
+}
+
+#destaque {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 20px;
+}
+
+#destaque .texto {
+    flex: 1 1 400px;
+}
+
+#destaque h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+#destaque h1 span {
+    color: #2877bc;
+}
+
+#destaque p {
+    color: #666666;
+    font-size: 1.1rem;
+}
+
+.seccao {
+    padding: 40px 20px;
+}
+
+.seccao h2 {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+#vantagens,
+#passos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 250px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.card img {
+    width: 45px;
+}
+
+.card p {
+    color: #666666;
+}
+
+#chamada {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 40px 20px;
+}
+
+.telemovel {
+    width: 280px;
+    margin: 0 auto;
+    border: 10px solid #222222;
+    border-radius: 35px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.perfil {
+    background-color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.capa {
+    height: 100px;
+    background-color: #2877bc;
+}
+
+.avatar {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: -50px auto 0 auto;
+    border: 5px solid white;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.perfil h1,
+.perfil h2 {
+    margin: 10px 0 0 0;
+    font-size: 1.4rem;
+}
+
+.categoria {
+    color: #666666;
+    margin: 0;
+}
+
+.bio {
+    padding: 0 20px;
+}
+
+.acoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.acoes img {
+    width: 45px;
+    padding: 11px;
+    border-radius: 50%;
+    background-color: #eeeeee;
+}
+
+.lista-botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.botao-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    color: #222222;
+    text-decoration: none;
+}
+
+.botao-link:hover {
+    border-color: #2877bc;
+}
+
+.botao-link img {
+    width: 22px;
+}
+
+.botao-link.principal {
+    justify-content: center;
+    background-color: #222222;
+    color: white;
+}
+
+.telemovel .capa {
+    height: 70px;
+}
+
+.telemovel .avatar {
+    width: 80px;
+    height: 80px;
+    margin-top: -40px;
+}
+
+#pagina-perfil {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.bloco-perfil {
+    text-align: left;
+    margin: 20px 20px 0 20px;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+.bloco-perfil h2 {
+    font-size: 1.15rem;
+}
+
+.bloco-perfil h2 img {
+    width: 22px;
+}
+
+.bloco-perfil h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.estrelas {
+    color: #f5b400;
+    font-size: 1.4rem;
+    margin: 0 0 10px 0;
+}
+
+.lista-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-menu li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px dashed #dddddd;
+}
+
+.tabela-horario {
+    width: 100%;
+}
+
+.tabela-horario td {
+    padding: 5px 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+#galeria {
+    display: flex;
+    gap: 8px;
+}
+
+#galeria .foto {
+    flex: 1;
+    height: 140px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#galeria .foto img {
+    width: 40%;
+}
+
+.foto1 { background-color: #6b4430; }
+.foto2 { background-color: #c98a3f; }
+.foto3 { background-color: #b5506f; }
+.foto4 { background-color: #4d7a5a; }
+
+.rodape-perfil {
+    color: #666666;
+    font-size: .9rem;
+}
+
+.formulario fieldset {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 0 20px 0;
+}
+
+.formulario legend {
+    font-weight: bold;
+}
+
+.campo {
+    flex: 1 1 200px;
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+    font-size: .9rem;
+    margin-bottom: 5px;
+}
+
+.campo input,
+.campo textarea,
+.campo select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.linha {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 15px;
+}
+
+.ajuda {
+    font-size: .8rem;
+    color: #666666;
+}
+
+.obrigatorio {
+    color: red;
+}
+
+button.botao {
+    cursor: pointer;
+}
+
+.titulo-pagina {
+    padding: 30px 0 10px 0;
+}
+
+.titulo-pagina p {
+    color: #666666;
+}
+
+#criar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+#criar .formulario {
+    flex: 1 1 500px;
+}
+
+#pre-visualizacao {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.adicionar-bloco {
+    margin: 15px 20px 0 20px;
+    padding: 15px;
+    border: 2px dashed #2877bc;
+    border-radius: 10px;
+    background-color: #eef5fc;
+    color: #2877bc;
+    font-weight: bold;
+}
+
+.adicionar-bloco span {
+    display: block;
+    font-size: 2rem;
+}
+
+#estatisticas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.estatistica {
+    flex: 1 1 200px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.estatistica .valor {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.estatistica .descricao {
+    color: #666666;
+}
+
+.colunas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+.caixa {
+    flex: 1 1 500px;
+    min-width: 0;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 0 20px 20px 20px;
+}
+
+.caixa.pequena {
+    flex: 1 1 250px;
+    text-align: center;
+}
+
+.caixa.pequena img {
+    width: 200px;
+}
+
+.tabela-scroll {
+    overflow-x: auto;
+}
+
+.tabela {
+    width: 100%;
+    min-width: 450px;
+    border-collapse: collapse;
+}
+
+.tabela th,
+.tabela td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.tabela th {
+    color: #666666;
+    font-size: .85rem;
+}
+
+.tabela img {
+    width: 20px;
+}
+
+.ativo {
+    color: green;
+    font-weight: bold;
+}
+
+.inativo {
+    color: #999999;
+}
+
+#contactos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+#perguntas,
+#mensagem {
+    flex: 1 1 400px;
+}
+
+.pergunta {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+}
+
+.pergunta h3 {
+    font-size: 1rem;
+}
+
+.pergunta p {
+    color: #666666;
+}
+
+#login {
+    max-width: 420px;
+    margin: 40px auto;
+}
+
+#login .botao {
+    width: 100%;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #cccccc;
+    padding: 40px 0 20px 0;
+}
+
+#rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+#rodape h2 {
+    color: white;
+    font-size: 1rem;
+}
+
+#rodape ul {
+    list-style: none;
+    padding: 0;
+}
+
+#rodape a {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+#rodape a:hover {
+    color: white;
+}
+
+#rodape .logo-rodape {
+    height: 45px;
+}
+
+#redes {
+    display: flex;
+    gap: 10px;
+}
+
+#redes img {
+    width: 26px;
+}
+
+.direitos {
+    text-align: center;
+    font-size: .85rem;
+    border-top: 1px solid #333333;
+    padding-top: 20px;
+}
+
+#comecar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.opcao {
+    flex: 1 1 300px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 5px 25px 25px 25px;
+}
+
+.opcao p {
+    color: #666666;
+}
+
+#lista-templates {
+    padding-bottom: 40px;
+}
+
+#templates {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.template {
+    flex: 1 1 130px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.template p {
+    color: #666666;
+    font-size: .9rem;
+}
+
+.miniatura {
+    height: 140px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.miniatura img {
+    width: 60px;
+}
+
+@media(min-width: 640px){
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: auto;
+    }
+
+    #destaque h1 {
+        font-size: 2.6rem;
+    }
+
+    #vantagens,
+    #passos,
+    #comecar {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
