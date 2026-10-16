@@ -6,7 +6,7 @@ Projeto de Aplicações Web - Licenciatura em Informática de Gestão, ISCAC, 20
 
 ## Aluno
 
-- [nº] - David Santos Soares - TP2
+- 2022120635 - David Santos Soares - TP2
 
 ## Tecnologias
 
@@ -39,6 +39,6 @@ Abrir o `index.html` no browser ou usar o Live Server no VS Code.
 ## Estado
 
 - [x] Entrega 1 - descrição e mockups
-- [x] Entrega 2 - estrutura e responsividade
+- [ ] Entrega 2 - estrutura e responsividade
 - [ ] Entrega 3 - interatividade e dados
 - [ ] Entrega 4 - apresentação
