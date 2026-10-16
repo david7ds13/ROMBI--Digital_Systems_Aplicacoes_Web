@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROMBI - Entrar</title>
+    <link rel="icon" href="imagens/favicon.png">
+    <link rel="stylesheet" href="css/style.css?v=4">
+</head>
+<body>
+
+    <header>
+        <div class="contentor" id="barra">
+            <a id="logo" href="index.html"><img src="imagens/logo-rombi.png" alt="logótipo da ROMBI"></a>
+
+            <nav>
+                <a class="nav-link" href="index.html">Início</a>
+                <a class="nav-link" href="templates.html">Criar Perfil</a>
+                <a class="nav-link" href="perfil.html">Ver Exemplo</a>
+                <a class="nav-link" href="contactos.html">Contactos</a>
+                <a class="nav-link activo" href="entrar.html">Entrar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contentor">
+
+        <div id="login">
+            <h1>Entrar</h1>
+            <form class="formulario" action="#" method="post">
+                <fieldset>
+                    <legend>Entrar na tua conta</legend>
+                    <div class="campo">
+                        <label for="l-email">Email</label>
+                        <input type="email" id="l-email" name="email" required>
+                    </div>
+                    <div class="campo">
+                        <label for="l-password">Palavra-passe</label>
+                        <input type="password" id="l-password" name="password" required>
+                    </div>
+                    <button type="submit" class="botao">Entrar</button>
+                </fieldset>
+            </form>
+            <p>Ainda não tens conta? <a href="templates.html">Cria o teu perfil</a>.</p>
+            <p>Por agora o login ainda não funciona. Podes ver o <a href="painel.html">painel de exemplo</a>.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="contentor">
+            <div id="rodape">
+                <div>
+                    <img class="logo-rodape" src="imagens/logo-rombi-branco.png" alt="logótipo da ROMBI">
+                    <p>Perfis digitais e cartões NFC para negócios e profissionais.</p>
+                </div>
+                <div>
+                    <h2>Páginas</h2>
+                    <ul>
+                        <li><a href="templates.html">Criar Perfil</a></li>
+                        <li><a href="perfil.html">Exemplo de perfil</a></li>
+                        <li><a href="painel.html">Painel</a></li>
+                        <li><a href="admin.html">Administração</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Contactos</h2>
+                    <ul>
+                        <li>Coimbra e Aveiro</li>
+                        <li><a href="mailto:geral@rombi.pt">geral@rombi.pt</a></li>
+                    </ul>
+                    <div id="redes">
+                        <a href="https://www.instagram.com/" target="_blank"><img src="imagens/icons/mdi--instagram-branco.svg" alt="instagram da ROMBI"></a>
+                        <a href="https://www.facebook.com/" target="_blank"><img src="imagens/icons/mdi--facebook-branco.svg" alt="facebook da ROMBI"></a>
+                    </div>
+                </div>
+            </div>
+            <p class="direitos">© 2026 ROMBI - Aplicações Web, ISCAC</p>
+        </div>
+    </footer>
+
+</body>
+</html>

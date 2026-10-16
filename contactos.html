@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROMBI - Contactos</title>
+    <link rel="icon" href="imagens/favicon.png">
+    <link rel="stylesheet" href="css/style.css?v=4">
+</head>
+<body>
+
+    <header>
+        <div class="contentor" id="barra">
+            <a id="logo" href="index.html"><img src="imagens/logo-rombi.png" alt="logótipo da ROMBI"></a>
+
+            <nav>
+                <a class="nav-link" href="index.html">Início</a>
+                <a class="nav-link" href="templates.html">Criar Perfil</a>
+                <a class="nav-link" href="perfil.html">Ver Exemplo</a>
+                <a class="nav-link activo" href="contactos.html">Contactos</a>
+                <a class="nav-link" href="entrar.html">Entrar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contentor">
+
+        <div class="titulo-pagina">
+            <h1>Contactos</h1>
+            <p>Vê as perguntas frequentes ou envia-nos uma mensagem.</p>
+        </div>
+
+        <div id="contactos">
+
+            <div id="perguntas">
+                <h2>Perguntas frequentes</h2>
+                <div class="pergunta">
+                    <h3>O que é uma placa NFC?</h3>
+                    <p>É uma placa com um pequeno chip. Quando se aproxima um telemóvel, o perfil abre sozinho, sem instalar nenhuma app.</p>
+                </div>
+                <div class="pergunta">
+                    <h3>Funciona em todos os telemóveis?</h3>
+                    <p>Quase todos os telemóveis recentes têm NFC. Para os outros, a placa tem também um QR Code.</p>
+                </div>
+                <div class="pergunta">
+                    <h3>Se mudar o menu tenho de comprar outra placa?</h3>
+                    <p>Não. Basta alterar o perfil no painel e a mudança aparece logo.</p>
+                </div>
+                <div class="pergunta">
+                    <h3>Quanto custa?</h3>
+                    <p>Criar o perfil é grátis. Só se paga a placa ou o cartão NFC.</p>
+                </div>
+            </div>
+
+            <div id="mensagem">
+                <form class="formulario" action="#" method="post">
+                    <fieldset>
+                        <legend>Envia-nos uma mensagem</legend>
+                        <div class="campo">
+                            <label for="c-nome">Nome <span class="obrigatorio">*</span></label>
+                            <input type="text" id="c-nome" name="nome" required>
+                        </div>
+                        <div class="campo">
+                            <label for="c-email">Email <span class="obrigatorio">*</span></label>
+                            <input type="email" id="c-email" name="email" required>
+                        </div>
+                        <div class="campo">
+                            <label for="c-assunto">Assunto</label>
+                            <select id="c-assunto" name="assunto">
+                                <option>Dúvida sobre o perfil</option>
+                                <option>Encomenda de placa NFC</option>
+                                <option>Outro</option>
+                            </select>
+                        </div>
+                        <div class="campo">
+                            <label for="c-mensagem">Mensagem <span class="obrigatorio">*</span></label>
+                            <textarea id="c-mensagem" name="mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="botao">Enviar</button>
+                    </fieldset>
+                </form>
+                <p>Também nos podes encontrar em Coimbra e Aveiro ou pelo email <a href="mailto:geral@rombi.pt">geral@rombi.pt</a>.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="contentor">
+            <div id="rodape">
+                <div>
+                    <img class="logo-rodape" src="imagens/logo-rombi-branco.png" alt="logótipo da ROMBI">
+                    <p>Perfis digitais e cartões NFC para negócios e profissionais.</p>
+                </div>
+                <div>
+                    <h2>Páginas</h2>
+                    <ul>
+                        <li><a href="templates.html">Criar Perfil</a></li>
+                        <li><a href="perfil.html">Exemplo de perfil</a></li>
+                        <li><a href="painel.html">Painel</a></li>
+                        <li><a href="admin.html">Administração</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Contactos</h2>
+                    <ul>
+                        <li>Coimbra e Aveiro</li>
+                        <li><a href="mailto:geral@rombi.pt">geral@rombi.pt</a></li>
+                    </ul>
+                    <div id="redes">
+                        <a href="https://www.instagram.com/" target="_blank"><img src="imagens/icons/mdi--instagram-branco.svg" alt="instagram da ROMBI"></a>
+                        <a href="https://www.facebook.com/" target="_blank"><img src="imagens/icons/mdi--facebook-branco.svg" alt="facebook da ROMBI"></a>
+                    </div>
+                </div>
+            </div>
+            <p class="direitos">© 2026 ROMBI - Aplicações Web, ISCAC</p>
+        </div>
+    </footer>
+
+</body>
+</html>
