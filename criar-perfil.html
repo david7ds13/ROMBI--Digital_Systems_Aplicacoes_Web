@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROMBI - Criar Perfil</title>
+    <link rel="icon" href="imagens/favicon.png">
+    <link rel="stylesheet" href="css/style.css?v=4">
+</head>
+<body>
+
+    <header>
+        <div class="contentor" id="barra">
+            <a id="logo" href="index.html"><img src="imagens/logo-rombi.png" alt="logótipo da ROMBI"></a>
+
+            <nav>
+                <a class="nav-link" href="index.html">Início</a>
+                <a class="nav-link activo" href="templates.html">Criar Perfil</a>
+                <a class="nav-link" href="perfil.html">Ver Exemplo</a>
+                <a class="nav-link" href="contactos.html">Contactos</a>
+                <a class="nav-link" href="entrar.html">Entrar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contentor">
+
+        <div class="titulo-pagina">
+            <h1>Cria o teu perfil digital</h1>
+            <p>Preenche os dados. Do lado direito vês como o perfil vai ficar no telemóvel.</p>
+        </div>
+
+        <div id="criar">
+
+            <form class="formulario" action="painel.html" method="get">
+
+                <fieldset>
+                    <legend>Tipo de perfil</legend>
+                    <input type="radio" id="negocio" name="tipo" value="negocio" checked>
+                    <label for="negocio">Negócio</label>
+                    <input type="radio" id="pessoal" name="tipo" value="pessoal">
+                    <label for="pessoal">Pessoal</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Dados principais</legend>
+                    <div class="linha">
+                        <div class="campo">
+                            <label for="nome">Nome <span class="obrigatorio">*</span></label>
+                            <input type="text" id="nome" name="nome" placeholder="Ex.: Café Mondego" required>
+                        </div>
+                        <div class="campo">
+                            <label for="categoria">Categoria</label>
+                            <input type="text" id="categoria" name="categoria" placeholder="Ex.: Café e Pastelaria">
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="bio">Descrição</label>
+                        <textarea id="bio" name="bio" rows="3" placeholder="Uma ou duas frases sobre o negócio"></textarea>
+                    </div>
+                    <div class="campo">
+                        <label for="foto">Logótipo ou fotografia</label>
+                        <input type="file" id="foto" name="foto">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contactos</legend>
+                    <div class="linha">
+                        <div class="campo">
+                            <label for="telefone">Telemóvel <span class="obrigatorio">*</span></label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="912345678" required>
+                        </div>
+                        <div class="campo">
+                            <label for="email">Email <span class="obrigatorio">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="nome@exemplo.pt" required>
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="morada">Morada</label>
+                        <input type="text" id="morada" name="morada" placeholder="Ex.: Rua Ferreira Borges, Coimbra">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Redes sociais</legend>
+                    <div class="linha">
+                        <div class="campo">
+                            <label for="instagram">Instagram</label>
+                            <input type="url" id="instagram" name="instagram" placeholder="https://instagram.com/...">
+                        </div>
+                        <div class="campo">
+                            <label for="facebook">Facebook</label>
+                            <input type="url" id="facebook" name="facebook" placeholder="https://facebook.com/...">
+                        </div>
+                        <div class="campo">
+                            <label for="linkedin">LinkedIn</label>
+                            <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/...">
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="google">Link das avaliações Google</label>
+                        <input type="url" id="google" name="google" placeholder="https://g.page/...">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tema do perfil</legend>
+                    <input type="radio" id="claro" name="tema" value="claro" checked>
+                    <label for="claro">Claro</label>
+                    <input type="radio" id="escuro" name="tema" value="escuro">
+                    <label for="escuro">Escuro</label>
+                </fieldset>
+
+                <button type="submit" class="botao">Criar Perfil</button>
+                <button type="reset" class="botao botao-branco">Limpar</button>
+            </form>
+
+            <div id="pre-visualizacao">
+                <h2>Pré-visualização</h2>
+                <div class="telemovel">
+                    <div class="perfil">
+                        <div class="capa"></div>
+                        <img class="avatar" src="imagens/avatares/avatar-padrao.svg" alt="avatar do perfil">
+                        <h2>O teu nome</h2>
+                        <p class="categoria">Categoria</p>
+                        <p class="bio">A descrição aparece aqui.</p>
+                        <div class="lista-botoes">
+                            <div class="botao-link principal">Guardar Contacto</div>
+                            <div class="botao-link"><img src="imagens/icons/ic--baseline-restaurant-menu.svg" alt="">Ver Menu</div>
+                        </div>
+                        <div class="adicionar-bloco"><span>+</span>Adicionar bloco</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="contentor">
+            <div id="rodape">
+                <div>
+                    <img class="logo-rodape" src="imagens/logo-rombi-branco.png" alt="logótipo da ROMBI">
+                    <p>Perfis digitais e cartões NFC para negócios e profissionais.</p>
+                </div>
+                <div>
+                    <h2>Páginas</h2>
+                    <ul>
+                        <li><a href="templates.html">Criar Perfil</a></li>
+                        <li><a href="perfil.html">Exemplo de perfil</a></li>
+                        <li><a href="painel.html">Painel</a></li>
+                        <li><a href="admin.html">Administração</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Contactos</h2>
+                    <ul>
+                        <li>Coimbra e Aveiro</li>
+                        <li><a href="mailto:geral@rombi.pt">geral@rombi.pt</a></li>
+                    </ul>
+                    <div id="redes">
+                        <a href="https://www.instagram.com/" target="_blank"><img src="imagens/icons/mdi--instagram-branco.svg" alt="instagram da ROMBI"></a>
+                        <a href="https://www.facebook.com/" target="_blank"><img src="imagens/icons/mdi--facebook-branco.svg" alt="facebook da ROMBI"></a>
+                    </div>
+                </div>
+            </div>
+            <p class="direitos">© 2026 ROMBI - Aplicações Web, ISCAC</p>
+        </div>
+    </footer>
+
+</body>
+</html>
