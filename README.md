@@ -14,6 +14,11 @@ Projeto de Aplicações Web - Licenciatura em Informática de Gestão, ISCAC, 20
 - CSS3 (flexbox)
 - JavaScript (a partir da Entrega 3)
 
+## Demonstração Online (GitHub Pages)
+
+O website pode ser testado diretamente em:
+👉 **[https://david7ds13.github.io/ROMBI--Digital_Systems_Aplicacoes_Web/](https://david7ds13.github.io/ROMBI--Digital_Systems_Aplicacoes_Web/)**
+
 ## Páginas
 
 - `index.html` - página inicial
@@ -39,6 +44,6 @@ Abrir o `index.html` no browser ou usar o Live Server no VS Code.
 ## Estado
 
 - [x] Entrega 1 - descrição e mockups
-- [ ] Entrega 2 - estrutura e responsividade
+- [x] Entrega 2 - estrutura e responsividade
 - [ ] Entrega 3 - interatividade e dados
 - [ ] Entrega 4 - apresentação
